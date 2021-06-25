@@ -4,7 +4,7 @@ public class Homework4 {
         int max = num[0];
         int min = num[0];
         for (int x: num) {
-            if (max < x) {
+            if (x > max) {
                 max = x;
             }
         }
