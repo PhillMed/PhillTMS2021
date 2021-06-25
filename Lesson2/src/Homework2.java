@@ -7,7 +7,7 @@ public class Homework2 {
         int a = in.nextInt();
         System.out.println("Отлично!\nТеперь введите второе число: ");
         int b = in.nextInt();
-        if (a < b) {
+        if (b > a) {
             System.out.println("Наибольшее число это " + b + ".");
         }
         else{
