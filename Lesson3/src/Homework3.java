@@ -97,7 +97,7 @@ public class Homework3 {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите число, до которого (включительно) будут выводиться простые числа:"); //лучше 1000000000 не вводить, а то будет долго считать)
         int x = in.nextInt();
-        int sum = 0;
+        long sum = 0;
         int count = 0;
         for (int i = 2; i <= x; i++) {
             boolean prime = true;
