@@ -7,8 +7,9 @@ public class Main {
         Computer computer = new Computer("I5-8660", "16 Gb", "2 Tb", 5);
         computer.info();
         System.out.println();
-        while (computer.getIsBurned() == 0 && computer.getResourceCycles() > 0)
+        while (!computer.isBurned() && computer.getResourceCycles() > 0) {
             computer.on();
+        }
         computer.on();
     }
 }

@@ -1,8 +1,14 @@
 package com.home.model;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Random;
 import java.util.Scanner;
+
+@Getter
+@Setter
 
 public class Computer {
     private String cpu;
@@ -12,70 +18,29 @@ public class Computer {
     private Random random = new Random();
     private Scanner in = new Scanner(System.in);
     private boolean burned;
-    private int isBurned;
+    private boolean isBurned;
 
     public Computer(String cpu, String ram, String hardDisk, int resourceCycles) {
         this.cpu = cpu;
         this.ram = ram;
         this.hardDisk = hardDisk;
         this.resourceCycles = resourceCycles;
-        this.isBurned = 0;
     }
 
     public void info() {
-        System.out.printf("Процессор: " + this.cpu + "\nОператива: " + this.ram + "\nЖёсткий диск: " + this.hardDisk + "\nЦиклы: " + this.resourceCycles);
-    }
-
-    public String getCpu() {
-        return cpu;
-    }
-
-    public void setCpu(String cpu) {
-        this.cpu = cpu;
-    }
-
-    public String getRam() {
-        return ram;
-    }
-
-    public void setRam(String ram) {
-        this.ram = ram;
-    }
-
-    public String getHardDisk() {
-        return hardDisk;
-    }
-
-    public void setHardDisk(String hardDisk) {
-        this.hardDisk = hardDisk;
-    }
-
-    public int getResourceCycles() {
-        return resourceCycles;
-    }
-
-    public void setResourceCycles(int resourceCycles) {
-        this.resourceCycles = resourceCycles;
-    }
-
-    public int getIsBurned() {
-        return isBurned;
-    }
-
-    public void setIsBurned(int isBurned) {
-        this.isBurned = isBurned;
+        System.out.print("Процессор: " + this.cpu + "\nОператива: " + this.ram + "\nЖёсткий диск: " + this.hardDisk + "\nЦиклы: " + this.resourceCycles);
     }
 
     public void on() {
         if (resourceCycles == 0) {
             System.out.println("Циклы закончились раньше, чем компьютер сгорел. =)");
         } else {
-            if (isBurned == 1) {
+            if (isBurned) {
                 burned();
             } else {
                 System.out.println("Включение компьютера...");
                 System.out.println("Загрузка...");
-                if (isBurned == 0 && checkAction() && checkResourceCycles()) {
+                if (!isBurned && checkAction() && checkResourceCycles()) {
                     off();
                 } else {
                     burned();
@@ -87,7 +52,7 @@ public class Computer {
     private void burned() {
         System.out.println("Компьютер сгорел...");
         burned = true;
-        isBurned = 1;
+        isBurned = true;
     }
 
     private void off() {
