@@ -52,9 +52,6 @@ public class Main {
                 .countRockets(9) // Как брать значение отсюда ****
                 .build();
 
-        Transport[] transports = {civil, military, light, cargo};
-
-
         System.out.println(light);
         System.out.println(cargo);
         System.out.println(civil);
