@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class Tank {
     private final int volume;
-    private int fuelLevel;
+    public int fuelLevel;
 
     public Tank(int volume) {
         this.volume = volume;

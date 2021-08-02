@@ -13,6 +13,11 @@ public class Car {
     private final Engine engine;
     private Tank tank;
     private boolean isMoving;
+    private int distance = 0;
+    private int speed;
+    private int maxSpeed;
+    private int wasteOfFuel;
+    private double time;
 
     public Car(Engine engine) {
         this.engine = engine;
