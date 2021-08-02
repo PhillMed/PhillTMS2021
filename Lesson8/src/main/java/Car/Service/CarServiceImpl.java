@@ -115,7 +115,7 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public void totalDistance() {
-        System.out.println(car.getDistance());
+        System.out.println("Всего проехали: " + car.getDistance() + "км");
     }
 
     @Override
