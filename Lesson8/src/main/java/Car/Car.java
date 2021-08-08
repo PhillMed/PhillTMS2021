@@ -13,7 +13,7 @@ public class Car {
     private final Engine engine;
     private Tank tank;
     private boolean isMoving;
-    private int distance = 0;
+    private int distance;
     private int speed;
     private int maxSpeed;
     private int wasteOfFuel;
