@@ -1,4 +1,4 @@
-package Robot.Price;
+package robot.price;
 
 public interface IPrice {
     default int getPrice() {

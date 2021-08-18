@@ -1,6 +1,6 @@
-package Robot.Legs;
+package robot.legs;
 
-import Robot.RobotParts;
+import robot.RobotParts;
 
 public class ToshibaLeg extends RobotParts implements ILeg {
 

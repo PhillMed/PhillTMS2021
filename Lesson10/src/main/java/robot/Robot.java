@@ -1,8 +1,8 @@
-package Robot;
+package robot;
 
-import Robot.Hands.IHand;
-import Robot.Heads.IHeads;
-import Robot.Legs.ILeg;
+import robot.hands.IHand;
+import robot.heads.IHeads;
+import robot.legs.ILeg;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

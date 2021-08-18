@@ -1,6 +1,6 @@
-package Robot.Heads;
+package robot.heads;
 
-import Robot.RobotParts;
+import robot.RobotParts;
 
 public class ToshibaHead extends RobotParts implements IHeads {
 

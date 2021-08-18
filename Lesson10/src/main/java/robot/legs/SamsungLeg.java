@@ -1,6 +1,6 @@
-package Robot.Legs;
+package robot.legs;
 
-import Robot.RobotParts;
+import robot.RobotParts;
 
 public class SamsungLeg extends RobotParts implements ILeg {
 

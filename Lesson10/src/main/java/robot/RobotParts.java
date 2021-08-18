@@ -1,6 +1,6 @@
-package Robot;
+package robot;
 
-import Robot.Price.IPrice;
+import robot.price.IPrice;
 
 public abstract class RobotParts implements IPrice {
     private final int price;

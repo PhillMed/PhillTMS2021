@@ -1,6 +1,6 @@
-package Robot.Hands;
+package robot.hands;
 
-import Robot.Price.IPrice;
+import robot.price.IPrice;
 
 public interface IHand extends IPrice {
     void upHand();

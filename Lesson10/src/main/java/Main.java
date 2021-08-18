@@ -1,17 +1,17 @@
-import Robot.Hands.IHand;
-import Robot.Hands.SamsungHand;
-import Robot.Hands.SonyHand;
-import Robot.Hands.ToshibaHand;
-import Robot.Heads.IHeads;
-import Robot.Heads.SamsungHead;
-import Robot.Heads.SonyHead;
-import Robot.Heads.ToshibaHead;
-import Robot.IRobot;
-import Robot.Legs.ILeg;
-import Robot.Legs.SamsungLeg;
-import Robot.Legs.SonyLeg;
-import Robot.Legs.ToshibaLeg;
-import Robot.Robot;
+import robot.hands.IHand;
+import robot.hands.SamsungHand;
+import robot.hands.SonyHand;
+import robot.hands.ToshibaHand;
+import robot.heads.IHeads;
+import robot.heads.SamsungHead;
+import robot.heads.SonyHead;
+import robot.heads.ToshibaHead;
+import robot.IRobot;
+import robot.legs.ILeg;
+import robot.legs.SamsungLeg;
+import robot.legs.SonyLeg;
+import robot.legs.ToshibaLeg;
+import robot.Robot;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package Robot.Legs;
+package robot.legs;
 
-import Robot.RobotParts;
+import robot.RobotParts;
 
 public class SonyLeg extends RobotParts implements ILeg {
 

@@ -1,6 +1,6 @@
-package Robot.Hands;
+package robot.hands;
 
-import Robot.RobotParts;
+import robot.RobotParts;
 
 public class SonyHand extends RobotParts implements IHand {
 
